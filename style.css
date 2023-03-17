@@ -74,3 +74,12 @@ a{
   margin-left: auto;
   margin-right: auto;
 }
+.back-end{
+    min-height:40vh;
+}
+#contacts{
+    min-height:40vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center
+}
