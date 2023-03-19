@@ -5,53 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bheka Lushaba Portfolio</title>
-    <script
-      src="https://kit.fontawesome.com/637f4ab425.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   </head>
   <body>
+
+    <!--------------------- start of header ---------------------------->
+
+
     <header class="header">
-      <img src="photos/b (1).png" alt="logo" width="3%" />
+      <img src="photos/b (1).png" alt="logo" class="logo" />
       <nav class="navbar">
-        <ul class="nav-list">
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contacts">Contacts</a></li>
+        <i class="bi bi-list" onclick="openmenu()"></i>
+        <ul class="nav-list" id="menu">
+          <i class="bi bi-x" onclick="closemenu()"></i>
+          <li onclick="closemenu()"><a href="#Home" >Home</a></li>
+          <li onclick="closemenu()"><a href="#about">About</a></li>
+          <li onclick="closemenu()"><a href="#projects">Projects</a></li>
+          <li onclick="closemenu()"><a href="#contacts">Contacts</a></li>
+          
         </ul>
       </nav>
     </header>
+
+    <!--------------------- start of Home section ---------------------------->
+
+
     <section id="Home">
+      <div><img src="photos/crop-removebg-preview (1).png" alt="Picture of me" /></div>
       <div class="description">
         <p>Hi my name is</p>
-        <h1 class="name">Bheka <span>Lushaba</span></h1>
-        <p>I am a web developer</p>
+        <h1 class="name">Bheka Lushaba</h1>
+        <p>a Software developer</p>
       </div>
-      <div><img src="photos/me .jpg" alt="Picture of me" /></div>
+      
     </section>
+
+    <!--------------------- start of About section ---------------------------->
+
+
     <section id="about">
       <img src="photos/about.jpg" alt="photo of me" />
       <div class="about">
-        <h2>About Me</h2>
+        <h2 class="center">About Me</h2>
         <p>
-          Hello there! I'm a budding full-stack web developer with a passion for
-          creating dynamic and engaging web applications. My skills in HTML and
-          CSS enable me to design and develop visually appealing websites, while
+          Hello there! I'm a budding full-stack Software developer with a passion for
+          creating dynamic and engaging software applications. My skills in HTML and
+          CSS enable me to design and develop visually appealing softwares, while
           my knowledge of JavaScript allows me to add interactive elements that
           enhance the user experience. I am currently on a journey to expand my
-          skill set and become proficient in full-stack web development, and I
+          skill set and become proficient in full-stack software development, and I
           am excited to learn new technologies and frameworks.
         </p>
         <p>
-          I am excited to continue my journey in full-stack web development and
+          I am excited to continue my journey in full-stack Software development and
           am eager to take on new challenges and opportunities. I look forward
           to the chance to work with others and create amazing web applications
           that make a positive impact in the world.
         </p>
         <div class="technologies">
-          <h3>Technologies & Tools</h3>
+          <h3 class="center">Technologies & Tools</h3>
           <img
             src="photos/HTML5_logo_and_wordmark.svg.png"
             alt="logo"
@@ -72,6 +85,10 @@
         </div>
       </div>
     </section>
+
+    <!--------------------- start of Projects section ---------------------------->
+
+
     <section id="projects">
       <h1 class="center">Projects</h1>
       <h2 class="center">Front-end</h2>
@@ -106,25 +123,45 @@
         <div class="project"></div>
       </div>
     </section>
+
+    <!--------------------- start of contact section ---------------------------->
+
+
     <section id="contacts">
       <h2 class="center">Contacts me</h2>
       <div class="contact-links">
-        <a href="" target="_blank" id="profile-link"
-          ><i class="fa-brands fa-square-facebook"></i> Facebook</a
+        <a
+          href="https://www.linkedin.com/in/bheka-lushaba-0a6a0021a"
+          target="_blank"
+          id="profile-link"
+          ><img src="photos/logo-linkedin-512.png" alt="" >
+        <a
+          id="profile-link"
+          href="https://github.com/Razorma"
+          target="_blank"
+          class="contact-details"
+          ><img src="photos/GitHub-Mark.png" alt="" ></a
         >
-        <a id="profile-link" href="" target="_blank" class="btn contact-details"
-          ><i class="fab fa-github"></i> GitHub</a
+        <a id="profile-link" href="https://twitter.com/BhekaBj" target="_blank" class="contact-details"
+          ><img src="photos/twitter.png" alt=""></a
         >
-        <a id="profile-link" href="" target="_blank" class="btn contact-details"
-          ><i class="fab fa-twitter"></i> Twitter</a
+        <a id="profile-link" href="mailto:bheka.bj@gmail.com" class="contact-details">
+          <img src="photos/email-icon-sign-symbol-logo-vector.jpg" alt="" ></a
         >
-        <a id="profile-link" href="" class="btn contact-details">
-          <i class="fas fa-at"></i> Send a mail</a
-        >
-        <a href="0794219169" class="btn contact-details"
-          ><i class="fas fa-mobile-alt"></i> Call me</a
-        >
+        <a href="tell:+27794219169" class="contact-details"
+           ><img src="photos/call.png" alt="" ></a
+        > 
       </div>
+      <a href="cv.pdf" download class="btn">Download CV</a> 
     </section>
+    <script>
+      var menu = document.getElementById("menu")
+      function openmenu(){
+        menu.style.right = "0";
+      }
+      function closemenu(){
+        menu.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>
