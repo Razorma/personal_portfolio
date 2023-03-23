@@ -262,9 +262,9 @@ li {
     max-height: 190px; 
     object-fit: cover;
 } 
- .project p {
+.FEP {
     position: relative;
-    top: 30px;
+    top: 38px;
     margin-left: 7px;
     z-index: 1;
 }
@@ -297,19 +297,30 @@ li {
     .project img {
         max-height: 190px; 
     } 
-     .project p {
+    .project p {
         margin-left: 7px;
     }
 }
 .back-end {
     min-height: 40vh;
 }
-.back-end p{
-    color: #B30000;
-    font-size: 3rem;
-    font-size: 200; 
+@media (min-width: 760px){
+    .back-end {
+    display: grid;
+    grid-template-columns: 350px ;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }  
 }
 
+.BEP {
+    position: relative;
+    top: 10px;
+    margin-left: 7px;
+    z-index: 1;
+}
 
 /* start of Contact section */
 
