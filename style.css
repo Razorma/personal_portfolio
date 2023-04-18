@@ -307,7 +307,7 @@ li {
 @media (min-width: 760px){
     .back-end {
     display: grid;
-    grid-template-columns: 350px ;
+    grid-template-columns: 350px 350px;
     justify-content: center;
     align-items: center;
     padding-top: 50px;
