@@ -189,6 +189,9 @@ li {
 .technology-section{
     margin: 20px;
 }
+b{
+    color: black;
+}
 .technologies {
     width: 100%;
     color: black;
