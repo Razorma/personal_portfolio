@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bheka Lushaba Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/637f4ab425.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 
@@ -34,11 +35,11 @@
 
 
   <section id="Home">
-    <div><img src="photos/crop-removebg-preview (1).png" alt="Picture of me" /></div>
+    <div><img class="Picture-of-me" src="photos/crop-removebg-preview (1).png" alt="Picture of me" /></div>
     <div class="description">
-      <p>Hi my name is</p>
-      <h1 class="name">Bheka Lushaba</h1>
-      <p>a Software developer</p>
+      <p>Hi my name is <br> <h1 class="name">Bheka Lushaba</h1> <br> A Software developer</p>
+      
+      
     </div>
 
   </section>
@@ -47,114 +48,149 @@
 
 
   <section id="about">
-    <img src="photos/about.jpg" alt="photo of me" />
+    <img class="Picture-of-me" src="photos/about.jpg" alt="photo of me" />
     <div class="about">
       <h2 class="center">About Me</h2>
-      <p>
-        Hello there! I'm a budding full-stack Software developer with a passion for
-        creating dynamic and engaging software applications. My skills in HTML and
-        CSS enable me to design and develop visually appealing softwares, while
-        my knowledge of JavaScript allows me to add interactive elements that
-        enhance the user experience. I am currently on a journey to expand my
-        skill set and become proficient in full-stack software development, and I
-        am excited to learn new technologies and frameworks.
+      <p class="about-paragraph">
+        Hi there! I'm a dedicated full-stack software developer,
+        driven by a deep passion for crafting dynamic and captivating software applications.
+        With a strong foundation in HTML, CSS, and JavaScript, 
+        I specialize in designing and building visually stunning and user-friendly software solutions. 
+        My expertise extends beyond the front end, 
+        as I also excel in creating robust back-end systems with Node.js and Express.js, 
+        and I'm skilled in database management using PostgreSQL.
       </p>
-      <p>
-        I am excited to continue my journey in full-stack Software development and
-        am eager to take on new challenges and opportunities. I look forward
-        to the chance to work with others and create amazing web applications
-        that make a positive impact in the world.
+      <p class="about-paragraph">
+         I am continuously advancing my skills and knowledge in the world of full-stack development, 
+         always eager to explore new technologies and frameworks. 
+         My journey in this dynamic field is marked by a commitment to innovation and excellence. 
+         I look forward to the exciting challenges and opportunities that lie ahead on this ever-evolving path. 
+         Let's create and innovate together!
       </p>
-      <div class="technologies">
-        <h3 class="center">Technologies & Tools</h3>
-        <img src="photos/HTML5_logo_and_wordmark.svg.png" alt="logo" width="10.2%" />
-        <img src="photos/CSS3_logo_and_wordmark.svg.png" alt="logo" width="9%" />
-        <img src="photos/JavaScript-logo.png" alt="logo" width="9%" />
-        <img src="photos/visual-studio-code-hd-logo-thumbnail.png" alt="logo" width="9%" />
-        <img src="photos/git-pic.webp" alt="logo" width="15%" />
-      </div>
+      
     </div>
   </section>
+  <div class="technology-section">
+    <h3 class="center tech-head">Technologies & Tools</h3>
+    <div class="technologies">
+      <div class="tech">
+        <h3>HTML5</h3>
+        <i class="fa-brands fa-html5 "></i>
+      </div>
+      <div class="tech">
+        <h3>CSS</h3>
+        <i class="fa-brands fa-css3"></i>
+      </div>
+      <div class="tech">
+        <h3>JavaScript</h3>
+        <i class="fa-brands fa-square-js"></i>
+      </div>
+      <div class="tech">
+        <h3>Git</h3>
+        <i class="fa-brands fa-git-alt"></i>
+      </div>
+      <div class="tech">
+        <h3>Github</h3>
+        <i class="fa-brands fa-github"></i>
+      </div>
+      <div class="tech">
+        <h3>Node JS</h3>
+        <i class="fa-brands fa-node"></i>
+      </div>
+    </div>
+  </div>
 
   <!--------------------- start of Projects section ---------------------------->
 
 
   <section id="projects">
-    <h1 class="center">Projects</h1>
-    <h2 class="center">Front-end</h2>
+    <h1 class="center topic">Projects</h1>
+    <h2 class="center topic">Front-End</h2>
     <div class="front-end">
       <div class="project">
         <div class="column">
-          <a href="https://razorma.github.io/basic_webpage/my-webpage.html">
-            <div class="project-tile">Webpage Flexbox</div><img id="Flexbox" id="basic" src="photos/landing.jpeg"
-              alt="webpage" />
-          </a>
+            <div class="project-tile">Personal Webpages</div>
+            <img id="Flexbox" id="basic" src="photos/full webpage.png"alt="webpage" />
+          <div class="description">
           <p class="FEP">
-            Here is a webpage I recently created using Flexbox, which allowed me
-            to easily and efficiently create a responsive layout for my content.
-            I was able to create a flexible and dynamic layout that adapts to
-            different screen sizes and devices.
+            Webpages, one I created using Flexbox,
+            and the other using Simple Grid where I was able to set
+            up a grid structure that made sense for my content. 
           </p>
+          <div>
+            <a href="https://github.com/Razorma/basic_webpage">
+              <i class="fa-brands fa-github githubP"></i>
+            </a>
+            <a href="https://razorma.github.io/basic_webpage/">
+              <i class="fa-solid fa-arrow-up-right-from-square githubP"></i>
+            </a>
+          </div>
+        </div>
         </div>
 
       </div>
       <div class="project">
         <div class="column">
-          <a href="https://razorma.github.io/basic_webpage/my-webpage-grid.html">
-            <div class="project-tile">Webpage SimpleGrid</div><img id="basic" src="photos/landing.jpeg" alt="webpage" />
-          </a>
-          <p class="FEP">
-            Here is a webpage I created using Simple Grid, that allowed me to
-            easily create a responsive layout for my content. I was able to set
-            up a grid structure that made sense for my content, and then
-            customize it as needed to achieve the look and feel that I wanted.
-          </p>
-        </div>
-      </div>
-      <div class="project">
-        <div class="column">
-          <a href="https://razorma.github.io/perfect-pizza/">
-            <div class="project-tile">Pizza Pamphlet</div><img id="basic" src="photos/perfect-pizza.jpeg"
-              alt="webpage" />
-          </a>
-          <p class="FEP">
-            Here is a webpage I created using html and CSS, which is a pizza pamphlet
-            that i created and formed a responsive layout for my contents.
-            I was able to create a flexible and dynamic layout that adapts to
-            different screen sizes and devices.
-          </p>
+            <div class="project-tile">Pizza Cart With API</div>
+            <img id="basic" src="photos/pizza_api.png" alt="webpage" />
+          <div class="description">
+            <p class="FEP">
+              Here is a pizza store where users can browse add to cart and purchase pizzas and a user can view their purchase
+              history.
+            </p>
+            <div>
+              <a href="https://github.com/Razorma/pizza-cart-with-api">
+                <i class="fa-brands fa-github githubP"></i>
+              </a>
+              <a href="https://razorma.github.io/pizza-cart-with-api/">
+                <i class="fa-solid fa-arrow-up-right-from-square githubP"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <a id="see-more"  href="projects.html"class="btn"> SEE MORE</a>
-    <h2 class="center">Back-end</h2>
+    <h2 class="center Full-Stack">Full-Stack</h2>
     <div class="back-end">
       <div class="project">
         <div class="column">
-          <a href="https://razorma.github.io/Bootcamp-tests/">
-            <div class="project-tile"> TDD</div><img id="Flexbox" id="basic" src="photos/image.tests.jpeg"
-              alt="webpage" />
-          </a>
-          <p class="BEP">
-            This is a a Test Driven Deployment project I recently worked on, I used Mocha and Chai to test functions I created
-            using JavaScript. The goal of the project was to ensure that the functions were working correctly and
-            meeting the requirements specified.
-          </p>
+          <div class="project-tile">Waiter Availability</div>
+          <img id="basic" src="photos/waiter availability.png" alt="webpage" />
+          <div class="description">
+            <p class="FEP">
+              Here Waiter Scheduling app were waiters can sign up login and shedule their working dates on the coffee shop.
+            </p>
+            <div>
+              <a href="https://github.com/Razorma/waiter_webapp">
+                <i class="fa-brands fa-github githubP"></i>
+              </a>
+              <a href="https://waiter-webapp.onrender.com">
+                <i class="fa-solid fa-arrow-up-right-from-square githubP"></i>
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
+      </div>  
       <div class="project">
         <div class="column">
-          <a href="https://razorma.github.io/phone-bill/test.html">
-            <div class="project-tile">TDD-Bill</div><img id="Flexbox" id="basic" src="photos/phoneBilltests.jpg"
-              alt="webpage" />
+          <div class="project-tile">Registration Numbers</div>
+          <img id="basic" src="photos/registration.png" alt="webpage" />
           </a>
-          <p class="BEP">
-            This another Test Driven Deployment project I recently worked on, I used Mocha and Chai to test factory functions I created
-            using JavaScript for my phone-bill project and linked to my DOM elements. .
-          </p>
-        </div>
+          <div class="description">
+            <p class="FEP">
+              Here Registration web app where users can add view and delete registration numbers from given towns.
+            </p>
+            <div>
+              <a href="https://github.com/Razorma/registration_numbers_webapp">
+               <i class="fa-brands fa-github githubP"></i>
+              </a>
+              <a href="https://registration-numbers-webapp-srr1.onrender.com">
+                <i class="fa-solid fa-arrow-up-right-from-square githubP"></i>
+              </a>
+            </div>
+          </div>
       </div>
-    </div>
+    </div> 
   </section>
 
   <!--------------------- start of contact section ---------------------------->
@@ -170,10 +206,9 @@
         <a id="profile-link" href="https://twitter.com/BhekaBj" target="_blank" class="contact-details"><img
             src="photos/twitter.png" alt=""></a>
         <a id="profile-link" href="mailto:bheka.bj@gmail.com" class="contact-details">
-          <img src="photos/email-icon-sign-symbol-logo-vector.jpg" alt=""></a>
-        <a href="tell:+27 79 421 9169" class="contact-details"><img src="photos/call.png" alt=""></a>
+        <img src="photos/email-icon-sign-symbol-logo-vector.jpg" alt=""></a>
     </div>
-    <a href="cv.pdf" download class="btn">Download CV</a>
+    <a href="Bheka_Lushaba_Resume_14-09-2023-07-42-50.pdf" download class="btn">Download CV</a>
   </section>
   <script>
     var menu = document.getElementById("menu")
