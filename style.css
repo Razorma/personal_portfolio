@@ -127,9 +127,10 @@ li {
     color: rgb(187, 167, 167);
     font-size: 2rem;
     font-weight: 200;
+
 }
 
-#Home .description {
+#Home .Description {
     padding-left: 20%;
 }
 
@@ -156,7 +157,7 @@ li {
         font-weight: 150;
     }
     
-    #Home .description {
+    #Home .Description {
         padding-left: 1%;
     }
     
