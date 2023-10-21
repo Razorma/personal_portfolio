@@ -114,7 +114,7 @@ li {
     align-items: center;
     justify-content: center;
     gap: 50px;
-    height: 100vh;
+    min-height: 60vh;
     background:#000000;
 }
 #Home img {
@@ -136,6 +136,7 @@ li {
 
 #Home .Description {
     width: 75%;
+    margin-bottom: 20px;
 
 }
 @media (min-width: 500px){
@@ -407,16 +408,18 @@ a{
         display: flex;
         align-items: start;
         justify-content: center;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        gap: 20px;
     }  
     .project{
-        width: 40%;
+        width: 350px;
     } 
     .back-end {
         display: flex;
         align-items: start;
         justify-content: center;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        gap: 20px;
     } 
 }
 
